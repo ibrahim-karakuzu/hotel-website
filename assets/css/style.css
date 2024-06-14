@@ -1,0 +1,330 @@
+/*
+001-HEADER
+002-HERO İMAGE
+003-SECTİON
+004-ROOMS
+005-FOOTER
+006-ANİMATİON CODS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* 001-HEADER*/
+header{
+    width:100%;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    background-color: #DFD0B8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#bar{
+    font-size: 23px;
+    cursor: pointer ;
+}
+#bar:hover{
+    animation-name: barAnim;
+    animation-duration: 0.7s ;
+    color: #187ec2;
+    transition: 0.5s ease;
+}
+header .left i{
+    font-size:15px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 7px;
+
+}
+header .left span{
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+}
+
+header div a i{
+    font-size: 23px;
+    margin-left: 7px;
+    color: black;
+}
+header .logo h2{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#DFD0B8;
+    background-color: black;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+header .right{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .right i:hover{
+    color:#187ec2;
+    transition: 0.5s ease;
+    animation-name: barAnim;
+    animation-duration: 0.7s;
+}
+header .right .yer{
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #DFD0B8;
+    background-color: black;
+    border-radius: 15px;
+    margin-left: 10px;
+    animation-name: buttonAnim;
+    animation-duration: 1s;
+}
+header .right .yer:hover{
+    background-color: aliceblue;
+    color: #153448;
+    transition: 1s ease;
+}
+/*HEADER FİNİSH*/
+/*002-HERO İMAGE*/
+.hero-image{
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.hero-image .filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+.hero-image .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DFD0B8;
+    text-align: center;
+}
+.hero-image .text h2{
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.hero-image .text span{
+    font-size: 55px;
+    letter-spacing: 20px;
+    font-weight: 700; 
+    color: goldenrod;
+}
+/*HERO İMAGE FİNİSH*/
+/*003-SECTİON*/
+.level{
+    background-color: #DFD0B8;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.level .img{
+    width:50%;
+    height: 100%;
+}
+.level .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.trailer{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.trailer .textr{
+   position: absolute;
+   width:400px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.trailer .textr h2{
+    font-size: 30px;
+    color:#153448;
+}
+.trailer .textr h4{
+    font-size:20px;
+    color: #948979;
+    margin-bottom:15px ;
+}
+.trailer .textr img{
+  width:100%;
+  margin-top: 15px;
+}
+/*SECTİON FİNİSH*/
+/*004-ROOMS*/
+.roomcon{
+    width: 100%;
+    height: 850px;
+    background-color: #948979;
+    position: relative;
+}
+.roomcon .text{
+    text-align:center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.roomcon .text h2{
+    font-size: 40px;
+    color: #153448;
+}
+.roomcon .text h4{
+    font-size:25px;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #153448;
+    color: #948979;
+    border-radius: 20px;
+}
+.roomcon .rooms{
+    height: 500px;
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.roomcon .rooms .roomitem{
+    position: relative;
+    width: 33%;
+    height: 50%;
+    cursor: pointer;
+    border: 2px solid #153448;
+}
+.roomcon .rooms .roomitem img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.roomcon .rooms .roomitem .texty{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    opacity: 0;
+    z-index: 5 ;
+}
+.roomcon .rooms .roomitem .filter{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index:3;
+    opacity: 0;
+}
+.roomcon .rooms .roomitem div:hover{
+    opacity: 1;
+    border: 5px solid white;
+    transition: 0.5s ease;
+}
+.roomcon .rooms .roomitem:hover > .filter{
+    opacity: 0.4;
+    transition: 0.5 ease;
+}
+/*ROOMS FİNİSH*/
+/*005-FOOTER*/
+footer{
+    width: 100%;
+    height: 500px;
+    background-color:#153448;
+    position: relative;
+}
+footer h1{
+    text-align: center;
+    color: #DFD0B8;
+    font-size: 40px;
+    letter-spacing: 7px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+footer .bigcont{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer .bigcont .footitem h2{
+    font-size: 24px;
+    color: red;
+    margin-bottom: 20px;
+}
+footer .bigcont .footitem a li{
+    color: #948979;
+    margin-bottom: 5px;
+}
+footer .name{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*FOOTER FİNİSH*/
+/*006-ANİMATİON CODS*/
+@keyframes barAnim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
